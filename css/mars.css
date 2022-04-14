@@ -17,7 +17,7 @@
 }
 
 .mars-wrapper__title {
-    font-family: 'Gotham Pro',sans-serif;
+    font-family: 'Gotham Pro', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
@@ -76,24 +76,25 @@
     width: 100%;
     position: relative;
 }
-.mars-wrapper-pictures__mars{
+
+.mars-img {
     position: absolute;
     top: 200px;
     left: -110px;
-
-    animation-name:mars-rotate;
-    animation-duration: 5s,1ms;
+    animation-name: mars-rotate;
+    animation-duration: 3s, 1ms;
     animation-timing-function: linear;
-    animation-play-state: running;
+    animation-play-state: paused;
     animation-iteration-count: infinite;
     cursor: pointer;
     animation-delay: .1s;
 }
 
-.mars-wrapper-pictures__mars:hover{
-    animation-name:mars-rotate;
-    animation-play-state: paused;
+.mars-img:hover {
+    animation-name: mars-rotate;
+    animation-play-state: running;
 }
+
 
 .mars-wrapper-pictures__workers {
     position: absolute;
@@ -101,25 +102,27 @@
     right: -28px;
 
 }
-.title-AK{
+
+.title-AK {
     position: absolute;
     right: 30px;
     bottom: 30px;
 }
+
 @keyframes mars-rotate {
- 0% {
-     transform: rotate(0deg);
- }
- 25% {
-     transform: rotate(90deg);
- }
- 50% {
-     transform: rotate(180deg);
- }
- 75% {
-     transform: rotate(270deg);
- }
- 100% {
-     transform: rotate(360deg);
- }
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

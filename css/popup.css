@@ -55,17 +55,16 @@
     margin-bottom: 20px;
 }
 
-.popup-body__content-scroll {
-    height: 445px;
-    overflow: auto;
-    margin-bottom: 45px;
+.popup-body__content {
+    padding: 40px 41px 48px 41px;
     position: relative;
+    height: 100%;
 }
 
 .popup-body__content::before {
     content: "";
     position: absolute;
-    bottom: 110px;
+    bottom: 70px;
     left: 0;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 95.83%);
     height: 87px;
@@ -162,4 +161,11 @@
 
 .popup-body__content-close:hover .popup-body__content-close-img path {
     fill: #4e5966;
+}
+.popup-body__content-scroll {
+    max-height: calc(100% - 80px);
+    overflow: auto;
+    height: 100%;
+    margin-bottom: 16px;
+    position: relative;
 }
