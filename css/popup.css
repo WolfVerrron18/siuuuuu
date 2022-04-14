@@ -1,0 +1,165 @@
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    visibility: hidden;
+}
+
+.popup-close {
+    display: none;
+}
+
+.popup-active {
+    visibility: visible;
+}
+
+.popup-active .popup-body {
+    transform: translateY(0) scale(100%);
+}
+
+.popup-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.popup-body {
+    transform: translateY(-50%) scale(0);
+    transition: .2s ease-in-out all;
+    margin: auto;
+    width: 712px;
+    height: 680px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    text-align: left;
+
+}
+
+.popup-body__content {
+    padding: 40px 41px 48px 41px;
+    position: relative;
+}
+
+.popup-body__content-title {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #1E1F1D;
+    margin-bottom: 20px;
+}
+
+.popup-body__content-scroll {
+    height: 445px;
+    overflow: auto;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.popup-body__content::before {
+    content: "";
+    position: absolute;
+    bottom: 110px;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 95.83%);
+    height: 87px;
+    width: 90%;
+    z-index: 100;
+
+}
+
+.popup-body__content-scroll::-webkit-scrollbar {
+    width: 4px;
+
+}
+
+.popup-body__content-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.popup-body__content-scroll::-webkit-scrollbar-thumb {
+    background: #B0B0AF;
+    border-radius: 8px;
+    height: 135px;
+}
+
+.popup-body__content-scroll::-webkit-scrollbar:hover {
+    cursor: pointer;
+}
+
+.popup-body__content-scroll p {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1E1F1D;
+    max-width: 564px;
+    padding-bottom: 25px;
+}
+
+.popup-body__content-scroll p:last-child {
+    padding-bottom: 50px;
+}
+
+.popup-body__content-button {
+    text-decoration: none;
+}
+
+.popup-body__content-button span {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #377ED9;
+    padding: 18px 101.5px;
+    position: relative;
+}
+
+.popup-body__content-button span::after {
+    content: '';
+    position: absolute;
+    width: 99%;
+    height: 95%;
+    bottom: -4px;
+    right: -4px;
+    border: 1px solid #377ED9;
+    background-color: transparent;
+    transition: .4s;
+}
+
+.popup-body__content-button span:hover::after {
+    bottom: 0;
+    right: 0;
+    transition: .4s;
+}
+
+.popup-body__content-button span:hover {
+    cursor: pointer;
+}
+
+.popup-body__content-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.popup-body__content-close-img:hover {
+    cursor: pointer;
+}
+
+.popup-body__content-close-img path {
+    transition: .2s;
+}
+
+.popup-body__content-close:hover .popup-body__content-close-img path {
+    fill: #4e5966;
+}

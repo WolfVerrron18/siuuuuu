@@ -1,0 +1,96 @@
+.masterpiece {
+    background: linear-gradient(180deg, #042146 2.08%, #042146 82.29%);
+    transition: .4s;
+}
+.masterpiece-click{
+    height: 100%;
+}
+.masterpiece-wrapper__content {
+    padding: 80px 0;
+
+}
+
+.masterpiece-wrapper-title {
+    font-family: 'Gotham Pro',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.masterpiece-wrapper-subtitles{
+    max-width: 1565px;
+    position: relative;
+
+}
+.masterpiece-wrapper-subtitle {
+    font-family: 'Gotham Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.masterpiece-wrapper-subtitle:first-child {
+    margin-bottom: 28px;
+}
+.btns{
+    position: relative;
+    top: 10px;
+    display: none;
+}
+.expand{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.expand-click{
+    display: none;
+}
+.btn-expand{
+    font-family: 'Gotham Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #F88568;
+    background: transparent;
+    border: none;
+}
+.btn-expand__arrow{
+    background: transparent;
+    border: none;
+    margin-left: 9px;
+}
+.collapse{
+    align-items: center;
+    display: none;
+    position: absolute;
+}
+.collapse-click{
+    display: flex;
+}
+.btn-collapse{
+    font-family: 'Gotham Pro',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #F88568;
+    background: transparent;
+    border: none;
+}
+.btn-collapse__arrow{
+    background: transparent;
+    border: none;
+    margin-left: 9px;
+}
+.masterpiece-wrapper-subtitles_anim{
+    overflow: inherit;
+    max-height: 100%;
+}
+.anim{
+    transition: .4s;
+}

@@ -1,0 +1,209 @@
+.container {
+    width: 1595px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.approach {
+    background: #F4F4F4;
+}
+
+/*Наш подход и наша миссия*/
+.approach-content {
+    display: flex;
+}
+
+.approach-content__block {
+    max-width: 640px;
+}
+
+.approach-content__block:first-child {
+    padding-top: 120px;
+}
+
+.approach-content__block:last-child {
+    margin-top: 60px;
+    padding-bottom: 288px;
+}
+
+.approach-content-block__title {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    color: #000000;
+    margin: 0 0 16px 0;
+}
+
+.approach-content-block__subtitle {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+
+.circles {
+    margin-top: 120px;
+    position: relative;
+    display: block;
+    margin-left: 121px;
+}
+
+.circle-blue {
+    position: absolute;
+}
+
+.circle-orange {
+    position: absolute;
+    top: -77px;
+    left: 259px;
+}
+
+.circle-green {
+    position: absolute;
+    left: 163px;
+    top: 202px;
+}
+
+/*Синий круг*/
+.circle__blue {
+    position: relative;
+    display: inline-block;
+    z-index: 13;
+}
+
+.circle__link {
+    position: absolute;
+    z-index: 11;
+}
+
+.circle-blue__linkOne {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+    top: 189px;
+    left: 72px;
+    transition: .4s;
+}
+
+.circle-blue__linkTwo {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    transform: rotate(0.42deg);
+    right: 101px;
+    top: 137px;
+    transition: .4s;
+
+}
+
+.circle-blue__linkThree {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    transform: rotate(0.42deg);
+    bottom: 68px;
+    left: 217px;
+    transition: .4s;
+}
+
+.circle-blue__linkFour {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    transform: rotate(0.42deg);
+    right: 26px;
+    bottom: 167px;
+    transition: .4s;
+}
+
+/*Оранжевый круг*/
+
+.circle__orange {
+    position: relative;
+    display: inline-block;
+    z-index: 11;
+}
+
+.circle__link {
+    position: absolute;
+    z-index: 11;
+}
+
+.circle-orange__linkOne {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+    right: 132px;
+    top: 161px;
+    transition: .4s;
+}
+
+
+/*Зелёный круг*/
+
+.circle-green__img {
+    border-radius: 50%;
+}
+
+.circle__green {
+    position: relative;
+    display: inline-block;
+    z-index: 12;
+    border-radius: 50%;
+}
+
+.circle__link {
+    position: absolute;
+    z-index: 11;
+}
+
+.circle-green__linkOne {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    transform: rotate(0.42deg);
+    right: 104px;
+    top: 146px;
+    transition: .4s;
+}
+
+.circle-green__linkTwo {
+    font-family: 'Gotham Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+    right: 165px;
+    bottom: 121px;
+    transition: .4s;
+}
+
+

@@ -1,0 +1,125 @@
+.mars {
+    background-image: linear-gradient(180deg, rgba(4, 33, 70, 0.6) 2.08%, rgba(4, 33, 70, 0.6) 82.29%), url("/img/stars.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.mars-wrapper {
+    display: flex;
+}
+
+.mars-wrapper__content {
+    padding-bottom: 400px;
+    max-width: 770px;
+    z-index: 10;
+}
+
+.mars-wrapper__title {
+    font-family: 'Gotham Pro',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    color: #FFFFFF;
+    padding-top: 180px;
+
+}
+
+.mars-wrapper__subtitle {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    max-width: 772px;
+}
+
+.mars-wrapper__button span {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 12px 41px;
+    background: #F88568;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.mars-wrapper__button span::after {
+    content: '';
+    position: absolute;
+    width: 99%;
+    height: 95%;
+    bottom: -4px;
+    right: -4px;
+    border: 1px solid #F88568;
+    background-color: transparent;
+    transition: .4s;
+}
+
+.mars-wrapper__button span:hover::after {
+    bottom: 0;
+    right: 0;
+    transition: .4s;
+}
+
+/*Марс и рабочие*/
+.mars-wrapper__pictures {
+    width: 100%;
+    position: relative;
+}
+.mars-wrapper-pictures__mars{
+    position: absolute;
+    top: 200px;
+    left: -110px;
+
+    animation-name:mars-rotate;
+    animation-duration: 5s,1ms;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    animation-delay: .1s;
+}
+
+.mars-wrapper-pictures__mars:hover{
+    animation-name:mars-rotate;
+    animation-play-state: paused;
+}
+
+.mars-wrapper-pictures__workers {
+    position: absolute;
+    top: 120px;
+    right: -28px;
+
+}
+.title-AK{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+@keyframes mars-rotate {
+ 0% {
+     transform: rotate(0deg);
+ }
+ 25% {
+     transform: rotate(90deg);
+ }
+ 50% {
+     transform: rotate(180deg);
+ }
+ 75% {
+     transform: rotate(270deg);
+ }
+ 100% {
+     transform: rotate(360deg);
+ }
+}

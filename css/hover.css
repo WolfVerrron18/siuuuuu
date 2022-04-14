@@ -1,0 +1,146 @@
+/*НАВЕДЕНИЕ НА СИНИЙ КРУГ(ДЁШЕВО)*/
+.img-hover__blueOne {
+    position: absolute;
+    top: -40px;
+    transition: .4s;
+    opacity: 0;
+    left: -30px;
+    z-index: 1;
+}
+
+.circle-blue__linkOneJS {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    left: 54px;
+}
+
+
+/*НАВЕДЕНИЕ НА СИНИЙ КРУГ(ТРЭЭЭШ)*/
+.img-hover__blueTwo {
+    position: absolute;
+    top: -20px;
+    height: 300px;
+    transition: .4s;
+    right: -30px;
+    opacity: 0;
+    z-index: 5;
+}
+
+.circle-blue__linkTwoJS {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    right: 80px;
+}
+
+/*НАВЕДЕНИЕ НА СИНИЙ КРУГ(ДОЛГО)*/
+.img-hover__blueThree {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    transition: .4s;
+    opacity: 0;
+    z-index: 3;
+}
+
+.circle-blue__linkThreeJS {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    left: 222px;
+}
+
+/*НАВЕДЕНИЕ НА СИНИЙ КРУГ(ТЫ САМ В ЭТО ВЕРИШЬ?)*/
+.img-hover__blueFour {
+    position: absolute;
+    transition: .4s;
+    z-index: 4;
+    opacity: 0;
+    right: -40px;
+    bottom: 25px;
+}
+
+.circle-blue__linkFourJS {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    right: -5px;
+}
+
+/*НАВЕДЕНИЕ НА ОРАНЖЕВЫЙ КРУГ(БЫСТРО)*/
+.img-hover__orange {
+    position: absolute;
+    bottom: 5px;
+    right: -45px;
+    width: 564px;
+    height: 541px;
+    transition: .4s;
+    opacity: 0;
+}
+
+.circle-orange__linkOneJS {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    right: 98px;
+}
+/*.hui5 {*/
+/*    position: absolute;*/
+/*    bottom:0;*/
+/*    right: 0;*/
+/*    width: 564px;*/
+/*    height: 541px;*/
+/*    transition: .4s;*/
+/*}*/
+/*НАВЕДЕНИЕ НА ЗЕЛЁНЫЙ КРУГ(ДОРОГО)*/
+.img-hover__green{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    z-index: 2;
+    transition: .4s;
+    opacity: 0;
+}
+.circle-green__linkOneJS{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    top: 120px;
+    right: 74px;
+}
+/*.hui6{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    z-index: 2;*/
+/*    transition: .4s;*/
+/*    width: 338px;*/
+/*    height: 291px;*/
+/*}*/
+/*НАВЕДЕНИЕ НА ЗЕЛЁНЫЙ КРУГ(КАЧЕСТВЕННО)*/
+.img-hover__greenTwo{
+    position: absolute;
+    top: 50px;
+    left: -45px;
+    width: 660px;
+    height: 550px;
+    opacity: 0;
+    transition: .4s;
+    z-index: 1;
+}
+
+.circle-green__linkTwoJS{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    bottom: 120px;
+    right: 100px;
+}
+.hover-blur{
+    opacity: 1;
+}
+.img-hover__blur{
+    cursor: pointer;
+}
