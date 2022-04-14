@@ -450,7 +450,11 @@
                 </div>
                 <div class="mars-wrapper__pictures">
                     <div class="mars-wrapper-pictures__img">
-                        <img src="img/mars.png" alt="" class="mars-wrapper-pictures__mars">
+                        <picture>
+                            <source srcset="img/mars1.png" media="(max-width: 1700px)" class="mars-2" >
+                            <source srcset="img/mars5.png" media="(max-width: 768px)">
+                            <img src="img/mars.png" alt="MDN" class="mars-img">
+                        </picture>
                         <img src="img/svg/workers.svg" alt="" class="mars-wrapper-pictures__workers">
                     </div>
                 </div>
